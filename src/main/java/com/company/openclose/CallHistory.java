@@ -23,27 +23,17 @@ public class CallHistory {
             this.subscriberId = subscriberId;
         }
 
-        /**
-         * @return the begin
-         */
         public LocalDateTime getBegin() {
             return begin;
         }
 
-        /**
-         * @return the duration
-         */
         public long getDuration() {
             return duration;
         }
 
-        /**
-         * @return the subscriber
-         */
         public Long getSubscriberId() {
             return subscriberId;
         }
-
     }
 
     private static final Map<Long, List<Call>> CALLS = new HashMap<>();
